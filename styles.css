@@ -103,11 +103,11 @@ nav ul li a:hover::after{
 
 #about-me h1 {
     font-size: 30px;
-    margin-top: 0px;
     color:#f90707;
 }
 
 #about-me p {
+    margin-top: 10px;
     font-size: 17.5px;
     text-align: justify;
 }
