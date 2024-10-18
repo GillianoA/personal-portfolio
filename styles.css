@@ -169,6 +169,7 @@ h2 {
 
 .skill {
     border: 3px solid rgb(75, 72, 72);
+    background-color: #1c1c1c;
     display: block;
     border-radius: 10px;
     text-align: center;
