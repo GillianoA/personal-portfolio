@@ -224,7 +224,7 @@ h2 {
 }
 
 .project h3 a{
-    color: white;
+    color: #FFD700;
     text-decoration: none;
     position: relative;
 }
@@ -233,7 +233,7 @@ h2 {
     content: '';
     width: 0;
     height: 3px;
-    background: #f90707;
+    background: #FFD700;
     position: absolute;
     left: 0;
     bottom: -6px;
