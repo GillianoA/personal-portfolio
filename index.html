@@ -6,6 +6,7 @@
         <title>Personal Portfolio Webpage - Gilliano Agard</title>
         <link rel="icon" href="./images/PPLogo Icon.png">
         <link rel="stylesheet" href="./styles.css">
+        <script src="./script.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <script src="https://kit.fontawesome.com/53179295cc.js" crossorigin="anonymous"></script>
@@ -21,7 +22,7 @@
                         <li><a href="#about-me">About</a></li>
                         <li><a href="#skills">Skills</a></li>
                         <li><a href="#projects">Projects</a></li>
-                        <li><a href="#">Recommendations</a></li>
+                        <li><a href="#Recommendations">Recommendations</a></li>
                     </ul>
                 </nav>
                 <!-- Hero Section -->
@@ -102,7 +103,7 @@
                 <section id="Recommendations">
                     <h2>Recommendations</h2>
                     <div style="clear:both;"></div>
-                    <div class="all-recommendations">
+                    <div class="all-recommendations" id="all_recommendations">
                         <div class="recommendation">
                             <span>&#8220;</span>
                             Gilliano ipsum sit amet, consectetur adipiscing elit. Nam erat lectus, euismod at sollicitudin eu, ullamcorper non eros. Quisque ac erat porttitor elit tincidunt molestie. In eu ligula odio.
@@ -124,7 +125,7 @@
                 <section id="contact">
                     <div class="flex_center">
                         <fieldset>
-                        <legend class="introduction">Leave a Recommendation</legend>          
+                        <legend class="introduction">Leave a Recommendation</legend>         
                         <input type="text" placeholder="  Name (Optional)"> <br/>
                         <textarea id="new_recommendation" cols="500" rows="10" placeholder="  Message"></textarea>
                         <div class="flex_center">
@@ -138,6 +139,12 @@
                     <a href="#">
                         <i class="fa-solid fa-arrow-up fa-2xl"></i>
                     </a>
+                </div>
+                <!-- Pop-up -->
+                <div class="popup" id="popup" class="flex_center">
+                    <i class="fa-regular fa-clipboard fa-2xl"></i>
+                    <h3>Thank you for the Recommendation!</h3>
+                    <button onclick="showPopup(false)">Ok</button>
                 </div>
             </div>
         </section>
